@@ -9,6 +9,8 @@ https://aliancabike.org.br/revista-eletricas/
  Na pasta "juntar" encontram-se arquivo xlsx da série história e os arquivos mensais ainda não analisados.
 
  Crie uma pasta de trabalho com uma subpasta "juntar" e rode o código.
+
+ As planilhas em "dados_brutos" não precisam ser utilizadas para fins do estudo das bicicletas elétricas. Estão sendo disponibilizadas caso alguém se interesse em fazer outras análises.
  
  **Formato**
  
