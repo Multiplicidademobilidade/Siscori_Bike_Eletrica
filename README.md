@@ -1,5 +1,9 @@
 # Siscori_Bike_Eletrica
- Siscori para Importação de Bicicleta Elétrica
+Este trabalho faz parte do modelo desenvolvido pela Multiplicidade Mobilidade para a Aliança Bike com o objetivo é estimar o mercado de bicicletas elétricas no Brasil. 
+
+O estudo completo e os boletins atualizados estão em:
+https://aliancabike.org.br/revista-eletricas/
+
 
  **Como usar**
  Na pasta "juntar" encontram-se arquivo xlsx da série história e os arquivos mensais ainda não analisados.
@@ -8,12 +12,11 @@
  
  **Formato**
  
- Os dados da SISCORI usam como separadores o @, e devem ser importados no Excel. Por isso, estão sendo disponibilizados os dados já organizados.
-
- Estão disponíveis as bases xlsx a partir de 2020. 
+ Os dados da SISCORI usam como separadores o @, e devem ser importados no Excel. Por isso, estão sendo disponibilizados os dados já organizados.  Estão disponíveis as bases xlsx a partir de 2020. 
 
   
- **Conteúdo**
+ **Conteúdo da base**
+
  Contém dados de comércio exterior do Ministério da Economia. A base da dados SISCORI  é o sistema de apoio da Receita Federal do Brasil - RFB que disponibiliza um determinado conjunto de informações a respeito das importações e exportações brasileiras, e oferece apoio a diferentes sistemas e análises estatísticas em geral. Por motivos de sigilo, a base disponível traz apenas informações cujos códigos na NCM (Nomenclatura Comum do Mercosul) estejam relacionados a operações promovidas por pelo menos quatro operadores no período considerado (mês). Sendo assim, o total das importações apresentado pelo sistema seria menor que o número real de importações caso não houvessem importadores suficientes. Mas, no caso, a categoria na qual a bicicleta elétrica é alocada, só não há dados em abril de 2017. A base SISCORI disponibiliza dados a partir de janeiro de 2016.
 
 O Capítulo 87 da NCM é destinado à importação de ‘Veículos automóveis, tratores, motocicletas e ciclomotores’. Até 2016 o código que acolhia as bicicletas elétricas era 87.11.9000 - Outras motocicletas/ciclos, com motor auxiliar com ou sem carros laterais. A partir de 2017, foi criado o código 87.11.6000 que exclui motocicletas mas ainda leva em consideração veículos elétricos em geral. A saber, os dados de 2017 ainda contém alguns códigos 87.11.9000. 
