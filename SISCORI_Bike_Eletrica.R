@@ -30,7 +30,14 @@ base1$DESCRICAO.DO.PRODUTO<-tolower(base1$DESCRICAO.DO.PRODUTO)
 #seleciona as descrições pertinentes à bicicleta elétrica
 base2 <- filter(base1, str_detect(DESCRICAO.DO.PRODUTO,"bicicleta|e-bike|bike elétrica|bike eletrica|eletric bike|pedal assistido|pedal|bici"))
 
-#salva o arquivo final atualizado no diretório de trabalho
+#estatística por ano_mês
+base2$ANOMES<- as.character(base2$ANOMES)
+bike_eletrica<-base2 %>%
+  group_by (ANOMES)%>%
+  summarise(n = sum(QTD.COMERCIAL.))
+
+#salva os arquivos finais atualizados no diretório de trabalho
 write.xlsx(base2, "base_atualizada.xlsx")
+write.xlsx(bike_eletrica, "resumo_atualizado.xlsx")
 
 
