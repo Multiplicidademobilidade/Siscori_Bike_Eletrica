@@ -4,6 +4,7 @@
 library(openxlsx)
 library(dplyr)
 library(stringr)
+library(tidyr)
 
 
 #Escolher a pasta de trabalho
@@ -32,6 +33,9 @@ base2 <- filter(base1, str_detect(DESCRICAO.DO.PRODUTO,"bicicleta|e-bike|bike el
 
 #estatística por ano_mês
 base2$ANOMES<- as.character(base2$ANOMES)
+base2$QTD.COMERCIAL.<-as.numeric(base2$QTD.COMERCIAL.)
+base2<-base2 %>% mutate(QTD.COMERCIAL. = replace_na(QTD.COMERCIAL., 0))
+
 bike_eletrica<-base2 %>%
   group_by (ANOMES)%>%
   summarise(n = sum(QTD.COMERCIAL.))
